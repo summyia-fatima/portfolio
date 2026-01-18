@@ -24,18 +24,19 @@ const Projects = () => {
       githubLink: "#",
       tech: ["Figma", "Mobile UI Design", "Prototyping", "UX Research"]
     },
-    {
+   {
       id: 2,
-      title: "E-Commerce Web Portal",
-      category: "Web Development",
-      description: "A fully responsive online shopping platform.",
-      longDescription: "A modern web application built with React and Tailwind CSS, featuring product filtering, cart management, and a secure checkout flow.",
-      images: [
-        "/src/assets/web1.png",
-        "/src/assets/web2.png"
-      ],
-      githubLink: "https://github.com/yourusername/project",
-      tech: ["React", "Tailwind CSS", "Redux", "Node.js"]
+title: "The Golden Noodle - Brand Identity", // Brand name according to your logo      category: "Banners",
+    description: "A delicious brand identity and landing page for a premium ramen shop.", 
+      longDescription: "This project involved creating a cohesive brand identity for a high-end noodle bar. Starting with a logo designed in Adobe Illustrator—featuring golden circular motifs that represent both warmth and endless noodles—I then developed a sleek, responsive landing page using React to showcase their menu and story.",
+       images: [
+        "src/assets/IMG-20221102-WA0123.jpg", // Jo aapne pehle screenshot mein dikhayi thi
+        "src/assets/IMG-20221102-WA0122.jpg" ,   // Dusri illustrator wali image
+              "src/assets/IMG-20221102-WA0109.jpg"    // Dusri illustrator wali image
+
+            ],
+    tech: ["Adobe Illustrator", "Vector Branding", "Typography", "Color Theory","Layers"] // Ab sahi hai!    },
+
     },
     {
       id: 6,
@@ -173,7 +174,7 @@ const Projects = () => {
 
               <div className="flex flex-wrap gap-2 mb-8">
                 {selectedProject.tech.map((t, i) => (
-                  <span key={i} className="text-[10px] border border-[#B06014]/40 text-[#B06014] px-3 py-1 rounded-full bg-[#B06014]/5 font-bold uppercase tracking-tighter">
+                  <span key={i} className="text-[14px] border border-[#B06014]/40 text-[#B06014] px-3 py-1 rounded-full bg-[#B06014]/5 font-bold  tracking-tighter">
                     {t}
                   </span>
                 ))}
