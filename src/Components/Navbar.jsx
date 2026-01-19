@@ -78,7 +78,7 @@ const Navbar = () => {
 
           {/* Mobile CTA: Matching the Button Theme */}
           <button className="w-full  bg-[#B06014] rounded-full px-8 py-2.5 text-[14px] font-bold uppercase tracking-widest text-black hover:bg-zinc-900 transition-all border border-white/5 shadow-xl active:scale-95">
-            Contact Us
+            Contact Me
           </button>
         </div>
       </div>
