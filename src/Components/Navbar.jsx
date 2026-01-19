@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react'; 
-import logo from '../assets/logo.png'; 
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +18,7 @@ const Navbar = () => {
       <div className="mx-auto flex max-w-6xl items-center justify-between rounded-full bg-[#B06014] px-6 md:px-10 py-3 shadow-[0_10px_40px_rgba(176,96,20,0.3)] border border-white/10">
         
         <div className="flex items-center hover:scale-105 transition-transform duration-300">
-          <img src={logo} alt="Logo" className="h-9 w-9 md:h-10 md:w-10 object-contain" />
+          <img src="logo.png" alt="Logo" className="h-9 w-9 md:h-10 md:w-10 object-contain" />
         </div>
 
         {/* Desktop Links */}

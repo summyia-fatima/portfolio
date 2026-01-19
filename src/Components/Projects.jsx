@@ -20,10 +20,10 @@ const Projects = () => {
       description: "Rider-centric mobile solution for optimized logistics.",
       longDescription: "FlashDash is a high-fidelity UI/UX design focused on the daily challenges of delivery riders. The app features a high-contrast interface for outdoor visibility, streamlined order management, and interactive GPS tracking.",
       images: [
-        "/src/assets/delivery boy (2).png",
-        "/src/assets/2.png",
-        "/src/assets/3.png",
-        "/src/assets/4.png",
+        "delivery boy (2).png",
+        "2.png",
+        "3.png",
+        "4.png",
       ],
       githubLink: "#",
       tech: ["Figma", "Mobile UI Design", "Prototyping", "UX Research"]
@@ -44,9 +44,9 @@ const Projects = () => {
       description: "Eye-catching marketing assets for retail promotion.",
       longDescription: "A series of high-impact digital banners designed in Figma for the Dollar Store. These include 'Look good, feel great' and 'Unbox your creativity' themes.",
       images: [
-        "src/assets/Cosmetic Banner.png",
-        "src/assets/Home Decor Banner.png",
-        "src/assets/Kid & Craft Banner.png"
+        "Cosmetic Banner.png",
+        "Home Decor Banner.png",
+        "Kid & Craft Banner.png"
       ],
       githubLink: "#",
       tech: ["Figma", "Graphic Design", "Marketing", "Retail Branding"]
@@ -58,9 +58,9 @@ title: "The Golden Noodle - Brand Identity", // Brand name according to your log
     description: "A delicious brand identity and landing page for a premium ramen shop.", 
       longDescription: "This project involved creating a cohesive brand identity for a high-end noodle bar. Starting with a logo designed in Adobe Illustrator—featuring golden circular motifs that represent both warmth and endless noodles—I then developed a sleek, responsive landing page using React to showcase their menu and story.",
        images: [
-        "src/assets/IMG-20221102-WA0123.jpg", // Jo aapne pehle screenshot mein dikhayi thi
-        "src/assets/IMG-20221102-WA0122.jpg" ,   // Dusri illustrator wali image
-              "src/assets/IMG-20221102-WA0109.jpg"    // Dusri illustrator wali image
+        "IMG-20221102-WA0123.jpg", // Jo aapne pehle screenshot mein dikhayi thi
+        "IMG-20221102-WA0122.jpg" ,   // Dusri illustrator wali image
+              "IMG-20221102-WA0109.jpg"    // Dusri illustrator wali image
 
             ],
     tech: ["Adobe Illustrator", "Vector Branding", "Typography", "Color Theory","Layers"] // Ab sahi hai!    },
