@@ -10,7 +10,7 @@ const Experience = () => {
       description: "Working as a Web Developer specializing in React.js, Next.js, and Node.js to build robust web applications."
     },
     {
-      company: "UI UX Designer (Internship)",
+      company: "Skybricks IT Solutions Pvt Ltd (Internship)",
       role: "UI/UX Designer",
       duration: "Jul 2025 - Oct 2025",
       description: "Focused on Mobile Application Design and Responsive Web Design, creating user-centric interfaces and prototypes."
@@ -33,13 +33,14 @@ const certifications = [
  
     {
       title: "Figma UI/UX Design Essentials",
-      issuer: "Skillshare",
+      issuer: "Skylarks IT Solution",
       date: "2024",
       link: "https://www.skillshare.com/"
     },
+
     {
-      title: "Full Stack Web Development",
-      issuer: "Codershub",
+      title: "Frontend Web Development",
+      issuer: "CodeAlpha",
       date: "2023",
       link: "#"
     },

@@ -49,7 +49,7 @@ const Footer = () => {
 ];
 
   return (
-    <footer className="w-full bg-[#1A0F07] border-t border-[#B06014]/20 pt-16 pb-8 px-6 font-sans">
+    <footer id="footer" className="w-full bg-[#1A0F07] border-t border-[#B06014]/20 pt-16 pb-8 px-6 font-sans">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-8 items-center justify-items-center">
           

@@ -41,7 +41,7 @@ const Skills = () => {
 
   const frontend = [
     { name: "Flutter", level: "80%", icon: "https://cdn.worldvectorlogo.com/logos/flutter.svg" },
-    { name: "React", level: "75%", icon: "https://cdn.worldvectorlogo.com/logos/react-2.svg" },
+    { name: "React JS", level: "90%", icon: "https://cdn.worldvectorlogo.com/logos/react-2.svg" },
     { name: "Html 5 / CSS 3 / JS", level: "90%", icon: "https://cdn.worldvectorlogo.com/logos/html-1.svg" },
     { 
       name: "Tailwind CSS", 

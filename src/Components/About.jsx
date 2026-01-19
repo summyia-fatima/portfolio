@@ -1,8 +1,33 @@
 import React from "react";
 
 const About = () => {
-  // Updated with a professional UI/UX & Tech Workspace image (800x600)
   const aboutImage = "https://images.unsplash.com/photo-1558655146-d09347e92766?w=800&h=600&fit=crop";
+
+  // Smooth Scroll Function
+  const scrollToFooter = () => {
+    const footer = document.getElementById('footer');
+    if (footer) {
+      // Offset calculate kiya taake scroll thora behtar lagay
+      const offset = 100;
+      const bodyRect = document.body.getBoundingClientRect().top;
+      const elementRect = footer.getBoundingClientRect().top;
+      const elementPosition = elementRect - bodyRect;
+      const offsetPosition = elementPosition - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
+
+  // Generic function for other links like "View Works"
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <section id="about" className="w-full bg-black my-22 px-6 overflow-hidden font-sans">
@@ -30,7 +55,6 @@ const About = () => {
                   alt="Professional Workspace"
                   className="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transform transition-all duration-700 group-hover:scale-110"
                 />
-                {/* Brownish Overlay to match your brand */}
                 <div className="absolute inset-0 bg-[#B06014]/10 mix-blend-multiply"></div>
               </div>
             </div>
@@ -72,16 +96,22 @@ const About = () => {
 
               {/* Action Buttons */}
               <div className="flex items-center justify-between mt-2">
-                <button className="bg-[#B06014] hover:bg-white text-white hover:text-black px-6 py-2.5 rounded-full font-bold transition-all duration-300 text-[12px] uppercase tracking-widest">
+                {/* Updated Contact Button */}
+                <button 
+                  onClick={scrollToFooter}
+                  className="bg-[#B06014] hover:bg-white text-white hover:text-black px-6 py-2.5 rounded-full font-bold transition-all duration-300 text-[12px] uppercase tracking-widest active:scale-95"
+                >
                   Contact Me
                 </button>
-                <a
-                  href="#projects"
-                  className="group flex items-center gap-2 text-white hover:text-white transition-all font-bold text-[14px] uppercase tracking-widest"
+
+                {/* Updated View Works Link */}
+                <button
+                  onClick={() => scrollToSection('projects')}
+                  className="group flex items-center gap-2 text-white hover:text-[#B06014] transition-all font-bold text-[14px] uppercase tracking-widest cursor-pointer"
                 >
                   View Works
                   <span className="w-6 h-[1px] bg-[#B06014] group-hover:w-10 transition-all"></span>
-                </a>
+                </button>
               </div>
             </div>
           </div>

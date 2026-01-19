@@ -2,7 +2,7 @@ import React from "react";
 import { Download } from "lucide-react";
 
 const Hero = () => {
-  const resumeLink = "https://drive.google.com/your-resume-link";
+  const resumeLink = "https://drive.google.com/file/d/1syqv5Mhb-q6u8fi-C9aSZ0iL6XDOoiuY/view?usp=sharing";
 
   return (
     <section className="w-full bg-black text-white my-8 px-4 flex items-center mt-32">
@@ -34,9 +34,7 @@ const Hero = () => {
             </span>
           </span>
           <p className="text-gray-400 text-base md:text-lg max-w-lg">
-            As a UI/UX Designer and Frontend Developer, I’m the bridge between
-            design and development, ensuring every pixel is perfect.
-          </p>
+          Transform your vision into high-performing digital products by bridging intuitive UI/UX design with scalable development.   </p>
           <button
             onClick={() => window.open(resumeLink, "_blank")}
             className="w-fit flex items-center space-x-2 bg-[#B06014]  rounded-full  px-8 py-2.5 text-xs font-bold uppercase tracking-widest text-white hover:bg-zinc-900 transition-all border border-white/5 shadow-xl"
