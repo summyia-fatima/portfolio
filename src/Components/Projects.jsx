@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useCallback } from 'react';
-import { Github, X, ChevronLeft, ChevronRight, Eye } from 'lucide-react';
+import React, { useState, useEffect, useCallback, useContext } from 'react';
+import { Github, X, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const Projects = () => {
   const [activeTab, setActiveTab] = useState('All');
@@ -8,8 +8,12 @@ const Projects = () => {
 
   const categories = ['All', 'UI/UX', 'Web Development', 'App Development', 'Broachers', 'Banners'];
 
-  const projectData = [
-    {
+  // --- Full Data for All Categories ---
+
+   const projectData = [
+/* ui ux */
+
+ {
       id: 1,
       title: "FlashDash - Delivery Rider App",
       category: "UI/UX",
@@ -24,7 +28,31 @@ const Projects = () => {
       githubLink: "#",
       tech: ["Figma", "Mobile UI Design", "Prototyping", "UX Research"]
     },
-   {
+    
+/* web dev */
+
+/*  app dev */
+
+/*  brochure */
+
+/* banners */
+
+ {
+      id: 6,
+      title: "Dollar Store Promotional Banners",
+      category: "Banners",
+      description: "Eye-catching marketing assets for retail promotion.",
+      longDescription: "A series of high-impact digital banners designed in Figma for the Dollar Store. These include 'Look good, feel great' and 'Unbox your creativity' themes.",
+      images: [
+        "src/assets/Cosmetic Banner.png",
+        "src/assets/Home Decor Banner.png",
+        "src/assets/Kid & Craft Banner.png"
+      ],
+      githubLink: "#",
+      tech: ["Figma", "Graphic Design", "Marketing", "Retail Branding"]
+    },
+
+ {
       id: 2,
 title: "The Golden Noodle - Brand Identity", // Brand name according to your logo      category: "Banners",
     description: "A delicious brand identity and landing page for a premium ramen shop.", 
@@ -38,20 +66,9 @@ title: "The Golden Noodle - Brand Identity", // Brand name according to your log
     tech: ["Adobe Illustrator", "Vector Branding", "Typography", "Color Theory","Layers"] // Ab sahi hai!    },
 
     },
-    {
-      id: 6,
-      title: "Dollar Store Promotional Banners",
-      category: "Banners",
-      description: "Eye-catching marketing assets for retail promotion.",
-      longDescription: "A series of high-impact digital banners designed in Figma for the Dollar Store. These include 'Look good, feel great' and 'Unbox your creativity' themes.",
-      images: [
-        "src/assets/Cosmetic Banner.png",
-        "src/assets/Home Decor Banner.png",
-        "src/assets/Kid & Craft Banner.png"
-      ],
-      githubLink: "#",
-      tech: ["Figma", "Graphic Design", "Marketing", "Retail Branding"]
-    }
+
+
+
   ];
 
   // --- Slider Logic ---
@@ -142,12 +159,14 @@ title: "The Golden Noodle - Brand Identity", // Brand name according to your log
 
             {/* Slider Section */}
             <div className="md:w-3/5 relative bg-black flex items-center justify-center min-h-[300px] md:min-h-[500px]">
+              {/* Image with object-contain to prevent cropping */}
               <img 
                 src={selectedProject.images[currentImgIndex]} 
                 alt="Project View" 
                 className="max-w-full max-h-full object-contain transition-opacity duration-500"
               />
               
+              {/* Permanent Navigation Icons */}
               <button onClick={prevImage} className="absolute left-4 top-1/2 -translate-y-1/2 bg-[#B06014]/80 p-3 rounded-full text-white hover:bg-[#B06014] transition-all shadow-lg">
                 <ChevronLeft size={24} />
               </button>
@@ -155,6 +174,7 @@ title: "The Golden Noodle - Brand Identity", // Brand name according to your log
                 <ChevronRight size={24} />
               </button>
 
+              {/* Progress Dots */}
               <div className="absolute bottom-6 flex gap-2">
                 {selectedProject.images.map((_, i) => (
                   <button 
@@ -174,30 +194,17 @@ title: "The Golden Noodle - Brand Identity", // Brand name according to your log
 
               <div className="flex flex-wrap gap-2 mb-8">
                 {selectedProject.tech.map((t, i) => (
-                  <span key={i} className="text-[14px] border border-[#B06014]/40 text-[#B06014] px-3 py-1 rounded-full bg-[#B06014]/5 font-bold  tracking-tighter">
+                  <span key={i} className="text-[10px] border border-[#B06014]/40 text-[#B06014] px-3 py-1 rounded-full bg-[#B06014]/5 font-bold uppercase tracking-tighter">
                     {t}
                   </span>
                 ))}
               </div>
 
-              {/* ACTION BUTTON LOGIC */}
-              <div className="mt-auto">
-                { (selectedProject.category === "Web Development" || selectedProject.category === "App Development") ? (
-                  <a 
-                    href={selectedProject.githubLink} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2 bg-[#B06014] text-white py-3 rounded-xl hover:bg-white hover:text-black transition-all font-bold text-sm"
-                  >
-                    <Github size={18} /> View Project Source
-                  </a>
-                ) : (
-                  <div className="flex items-center justify-center gap-2 bg-transparent border border-[#B06014]/40 text-gray-400 py-3 rounded-xl font-medium text-xs cursor-default">
-                    <Eye size={16} className="text-[#B06014]/60" /> Design Preview Only
-                  </div>
-                )}
-              </div>
+              <a href={selectedProject.githubLink} className="flex items-center justify-center gap-2 bg-[#B06014] text-white py-3 rounded-xl hover:bg-white hover:text-black transition-all font-bold text-sm">
+                <Github size={18} /> View Project Source
+              </a>
             </div>
+
           </div>
         </div>
       )}
