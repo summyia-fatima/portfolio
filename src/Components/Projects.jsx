@@ -268,7 +268,7 @@ const projectData = [
 
   <div className="flex flex-wrap gap-2 mb-8">
     {selectedProject.tech.map((t, i) => (
-      <span key={i} className="text-[10px] border border-[#B06014]/40 text-[#B06014] px-3 py-1 rounded-full bg-[#B06014]/5 font-bold">
+      <span key={i} className="text-[12px] border border-[#B06014]/40 text-[#B06014] px-3 py-1 rounded-full bg-[#B06014]/5 font-bold">
         {t}
       </span>
     ))}
