@@ -58,7 +58,7 @@ const Navbar = () => {
             onClick={() => handleScroll('footer')}
             className="hidden md:block rounded-full bg-black px-8 py-2.5 text-xs font-bold uppercase tracking-widest text-white hover:bg-zinc-900 transition-all border border-white/5 shadow-xl"
           >
-            Contact Us
+            Contact Me
           </button>
           
           <button 
