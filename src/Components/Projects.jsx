@@ -250,30 +250,43 @@ const projectData = [
             </div>
 
             {/* Details Section */}
-            <div className="md:w-2/5 p-8 flex flex-col justify-center bg-[#1A0F07]">
-              <span className="text-[#B06014] text-xs font-black uppercase tracking-widest">{selectedProject.category}</span>
-              <h3 className="text-white text-2xl font-bold mt-2 mb-4">{selectedProject.title}</h3>
-              <p className="text-gray-300 text-sm mb-6 leading-relaxed">{selectedProject.longDescription}</p>
+          {/* 1. Added 'max-h-[80vh]' to limit height on mobile */}
+{/* 2. Added 'overflow-y-auto' to allow scrolling inside the box */}
+<div className="md:w-2/5 p-8 flex flex-col justify-start bg-[#1A0F07] overflow-y-auto max-h-[70vh] md:max-h-none md:justify-center">
+  
+  <span className="text-[#B06014] text-xs font-black uppercase tracking-widest">
+    {selectedProject.category}
+  </span>
+  
+  <h3 className="text-white text-2xl font-bold mt-2 mb-4">
+    {selectedProject.title}
+  </h3>
+  
+  <p className="text-gray-300 text-sm mb-6 leading-relaxed">
+    {selectedProject.longDescription}
+  </p>
 
-              <div className="flex flex-wrap gap-2 mb-8">
-                {selectedProject.tech.map((t, i) => (
-                  <span key={i} className="text-[10px] border border-[#B06014]/40 text-[#B06014] px-3 py-1 rounded-full bg-[#B06014]/5 font-bold">
-                    {t}
-                  </span>
-                ))}
-              </div>
+  <div className="flex flex-wrap gap-2 mb-8">
+    {selectedProject.tech.map((t, i) => (
+      <span key={i} className="text-[10px] border border-[#B06014]/40 text-[#B06014] px-3 py-1 rounded-full bg-[#B06014]/5 font-bold">
+        {t}
+      </span>
+    ))}
+  </div>
 
-              {/* Conditional Button Logic */}
-              {(selectedProject.category === "Web Development" || selectedProject.category === "App Development") ? (
-                <a href={selectedProject.link} target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2 bg-[#B06014] text-white py-3 rounded-xl hover:bg-white hover:text-black transition-all font-bold text-sm">
-                  <Github size={18} /> View Project Source
-                </a>
-              ) : (
-                <div className="flex items-center justify-center gap-2 bg-white/5 border border-white/10 text-gray-300 py-3 rounded-xl font-bold text-sm cursor-default">
-                  <Palette size={18} /> Design Showcase
-                </div>
-              )}
-            </div>
+  {/* Button Section */}
+  <div className="mt-auto"> {/* 'mt-auto' pushes button to bottom if space allows */}
+    {(selectedProject.category === "Web Development" || selectedProject.category === "App Development") ? (
+      <a href={selectedProject.link} target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2 bg-[#B06014] text-white py-3 rounded-xl hover:bg-white hover:text-black transition-all font-bold text-sm">
+        <Github size={18} /> View Project Source
+      </a>
+    ) : (
+      <div className="flex items-center justify-center gap-2 bg-white/5 border border-white/10 text-gray-300 py-3 rounded-xl font-bold text-sm cursor-default">
+        <Palette size={18} /> Design Showcase
+      </div>
+    )}
+  </div>
+</div>
           </div>
         </div>
       )}
