@@ -71,7 +71,7 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
-      <div className={`fixed inset-x-4 top-24 transform transition-all duration-500 ease-in-out md:hidden ${
+      <div className={`fixed inset-x-4 top-24 transform transition-all duration-500 ease-in-out overflow-y-auto md:hidden ${
           isOpen ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0 pointer-events-none'
         }`}>
         
@@ -96,7 +96,7 @@ const Navbar = () => {
 
           <button 
             onClick={() => handleScroll('footer')}
-            className="w-full bg-[#B06014] rounded-full px-8 py-2.5 text-[14px] font-bold uppercase tracking-widest text-black hover:bg-zinc-900 transition-all border border-white/5 shadow-xl active:scale-95"
+            className="w-full bg-[#B06014] rounded-full px-8 py-2.5 text-[14px] font-bold uppercase tracking-widest text-black hover:bg-[#d37823] transition-all border border-white/5 shadow-xl active:scale-95"
           >
             Contact Me
           </button>
