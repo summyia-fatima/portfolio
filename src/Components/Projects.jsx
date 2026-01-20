@@ -10,7 +10,7 @@ const Projects = () => {
     "All",
     "UI/UX",
     "Web Development",
-    "App Development",
+    // "App Development",
     "Marketing Design",
  
   ];
@@ -185,7 +185,7 @@ const projectData = [
     : projectData.filter((p) => p.category === activeTab);
 
   return (
-    <section id="projects" className="relative w-full bg-black py-20 px-6 font-sans min-h-screen text-white">
+    <section id="projects" className="relative w-full bg-black py-10 px-6 font-sans min-h-screen text-white">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col items-center mb-12">
           <h2 className="text-[#B06014] text-3xl md:text-4xl font-bold tracking-widest uppercase">My Portfolio</h2>

@@ -30,7 +30,7 @@ const About = () => {
   };
 
   return (
-    <section id="about" className="w-full bg-black my-22 px-6 overflow-hidden font-sans">
+    <section id="about" className="w-full bg-black  py-10 px-6 overflow-hidden font-sans">
       <div className="mx-auto max-w-6xl">
         
         {/* Section Title */}

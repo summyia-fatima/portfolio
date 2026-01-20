@@ -70,7 +70,7 @@ const Skills = () => {
 }  ];
 
   return (
-    <section id="skills" className="w-full bg-black my-22  px-6 font-sans">
+    <section id="skills" className="w-full bg-black  py-10  px-6 font-sans">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col items-center mb-20">
             <h2 className="text-[#B06014] text-3xl md:text-4xl font-bold  text-center tracking-widest uppercase">
