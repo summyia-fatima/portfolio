@@ -5,7 +5,7 @@ const Hero = () => {
   const resumeLink = "https://drive.google.com/file/d/1syqv5Mhb-q6u8fi-C9aSZ0iL6XDOoiuY/view?usp=sharing";
 
   return (
-    <section className="w-full bg-black text-white py-10 px-4 flex items-center mt-32">
+    <section className="w-full bg-black text-white py-10 px-4 flex items-center mt-18">
       <div className="mx-auto max-w-6xl flex flex-col md:flex-row items-center justify-between gap-10">
         {/* IMAGE SECTION (Right side on desktop, Top on mobile) */}
         <div className="w-full md:w-1/2 flex justify-center md:justify-end order-1 md:order-2">
