@@ -12,7 +12,7 @@ const Hero = () => {
           {/* Added rounded-full here to fix the square background issue */}
           <div className="relative w-54 h-54 sm:w-80 sm:h-80 md:w-[450px] md:h-[450px] bg-[#B06014] rounded-full flex justify-center items-center overflow-hidden border-4 md:border-8 border-black shadow-2xl">
             <img
-              src="profile-pic.png"
+              src="Group 4.png"
               alt="Profile"
               /* Changed from w-full h-full to a specific percentage */
               className="w-[85%] h-auto object-contain"
