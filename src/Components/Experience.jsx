@@ -16,7 +16,7 @@ const Experience = () => {
       description: "Focused on Mobile Application Design and Responsive Web Design, creating user-centric interfaces and prototypes."
     },
     {
-      company: "Development Lab Corporation - Internship",
+      company: "Development Hub Corporation - Internship",
       role: "UI/UX Designer",
       duration: "Nov 2023 - Present", // Note: Matches the remote internship in your image
       description: "Working on Figma prototyping and software design systems in a remote environment."
@@ -44,6 +44,14 @@ const certifications = [
       date: "2023",
       link: "#"
     },
+
+      {
+      title: "UI/UX Designer - Figma ",
+      issuer: "Development Hub Corporation",
+      date: "2026",
+      link: "#"
+    },
+
 
   ];
   return (
