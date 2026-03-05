@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react'; 
+import { useNavigate, useLocation, Link } from 'react-router-dom'; // Import hooks
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const navLinks = [
     { name: 'About', href: 'about' },
@@ -12,33 +15,38 @@ const Navbar = () => {
     { name: 'Projects', href: 'projects' },
   ];
 
-  // Generic Smooth Scroll Function
   const handleScroll = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      // Offset calculation (agar navbar fixed hai to uski height nikalne ke liye)
-      const offset = 100; 
-      const bodyRect = document.body.getBoundingClientRect().top;
-      const elementRect = element.getBoundingClientRect().top;
-      const elementPosition = elementRect - bodyRect;
-      const offsetPosition = elementPosition - offset;
+    // Check karein ke kya hum Home page par hain
+    if (location.pathname === '/') {
+      // Agar home par hain, toh purana scroll logic
+      const element = document.getElementById(id);
+      if (element) {
+        const offset = 100; 
+        const bodyRect = document.body.getBoundingClientRect().top;
+        const elementRect = element.getBoundingClientRect().top;
+        const elementPosition = elementRect - bodyRect;
+        const offsetPosition = elementPosition - offset;
 
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
+    } else {
+      // Agar hum detail page par hain, toh pehle Home par jayein phir scroll karein
+      navigate('/', { state: { targetId: id } });
     }
-    setIsOpen(false); // Mobile menu close kar dega
+    setIsOpen(false);
   };
 
   return (
     <nav className="w-full bg-black py-6 px-4 fixed top-0 left-0 right-0 z-[100]">
-      {/* Main Navbar Capsule */}
       <div className="mx-auto flex max-w-6xl items-center justify-between rounded-full bg-[#B06014] px-6 md:px-10 py-3 shadow-[0_10px_40px_rgba(176,96,20,0.3)] border border-white/10">
         
-        <div className="flex items-center hover:scale-105 transition-transform duration-300">
-          <img src="logo.png" alt="Logo" className="h-9 w-9 md:h-10 md:w-10 object-contain" />
-        </div>
+        {/* Logo ko Link bana diya taake home par ja sakein */}
+        <Link to="/" className="flex items-center hover:scale-105 transition-transform duration-300">
+          <img src="/logo.png" alt="Logo" className="h-9 w-9 md:h-10 md:w-10 object-contain" />
+        </Link>
 
         {/* Desktop Links */}
         <div className="hidden space-x-8 md:flex">
@@ -70,13 +78,11 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu (Isme bhi handleScroll update ho gaya) */}
       <div className={`fixed inset-x-4 top-24 transform transition-all duration-500 ease-in-out overflow-y-auto md:hidden ${
           isOpen ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0 pointer-events-none'
         }`}>
-        
         <div className="bg-[#1A0F07]/95 backdrop-blur-xl rounded-[2.5rem] p-10 flex flex-col items-center space-y-8 shadow-[0_20px_60px_rgba(0,0,0,0.8)] border border-[#B06014]/20">
-          
           <div className="flex flex-col items-center space-y-6 w-full">
             {navLinks.map((link, index) => (
               <button
@@ -91,12 +97,9 @@ const Navbar = () => {
               </button>
             ))}
           </div>
-
-          <div className="w-1/3 h-[2px] bg-[#B06014]/30 rounded-full" />
-
           <button 
             onClick={() => handleScroll('footer')}
-            className="w-full bg-[#B06014] rounded-full px-8 py-2.5 text-[14px] font-bold uppercase tracking-widest text-black hover:bg-[#d37823] transition-all border border-white/5 shadow-xl active:scale-95"
+            className="w-full bg-[#B06014] rounded-full px-8 py-2.5 text-[14px] font-bold uppercase tracking-widest text-black hover:bg-[#d37823] transition-all border border-white/5 shadow-xl"
           >
             Contact Me
           </button>

@@ -1,25 +1,46 @@
 // src/App.jsx
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Hero from "./Components/Hero";
 import About from "./Components/About";
 import Education from "./Components/Education";
 import Skills from "./Components/Skills";
-import Experience from "./Components/Experience"; // Import naya section
+import Experience from "./Components/Experience";
 import Projects from "./Components/Projects";
+import ProjectDetail from "./Components/ProjectDetail"; // Naya component
 import Footer from "./Components/Footer";
+
+// Ek naya function banayein jo saare home sections ko hold kare
+const Home = () => (
+  <>
+    <Hero />
+    <About />
+    <Education />
+    <Skills />
+    <Experience />
+    <Projects />
+  </>
+);
 
 function App() {
   return (
-    <div className="min-h-screen bg-black overflow-x-hidden">
-      <Navbar />
-      <Hero />
-      <About />
-      <Education />
-      <Skills />
-      <Experience /> {/* Experience & Certifications yahan add hua */}
-      <Projects />
-      <Footer />
-    </div>
+    <Router>
+      <div className="min-h-screen bg-black overflow-x-hidden">
+        {/* Navbar hamesha dikhega */}
+        <Navbar /> 
+        
+        <Routes>
+          {/* Main Portfolio Page */}
+          <Route path="/" element={<Home />} />
+          
+          {/* Dedicated Project Detail Page */}
+          <Route path="/project/:id" element={<ProjectDetail />} />
+        </Routes>
+
+        {/* Footer hamesha dikhega */}
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
