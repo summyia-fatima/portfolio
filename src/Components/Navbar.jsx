@@ -40,7 +40,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="w-full bg-black py-6 px-4 fixed top-0 left-0 right-0 z-[100]">
+    <nav className="w-full bg-black py-4 px-4 fixed top-0 left-0 right-0 z-[100]">
       <div className="mx-auto flex max-w-6xl items-center justify-between rounded-full bg-[#B06014] px-6 md:px-10 py-3 shadow-[0_10px_40px_rgba(176,96,20,0.3)] border border-white/10">
         
         {/* Logo ko Link bana diya taake home par ja sakein */}
@@ -54,7 +54,7 @@ const Navbar = () => {
             <button
               key={link.name}
               onClick={() => handleScroll(link.href)}
-              className="text-white text-[16px] font-bold tracking-wide hover:text-black transition-all duration-300 ease-in-out hover:-translate-y-1"
+              className="text-white text-[16px] font-semib tracking-wide hover:text-black transition-all duration-300 ease-in-out hover:-translate-y-1"
             >
               {link.name}
             </button>
