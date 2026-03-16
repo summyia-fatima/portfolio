@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"; // Yeh line add karein
 
 const Projects = () => {
   const [activeTab, setActiveTab] = useState("All");
-  const categories = ["All", "UI/UX", "Web Development", "Marketing Design"];
+  const categories = ["All", "UI/UX", "Web Development","Mobile App Development", "Marketing Design"];
 
   const filteredProjects = activeTab === "All" 
     ? projectData 
