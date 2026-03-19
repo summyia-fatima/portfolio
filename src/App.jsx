@@ -15,10 +15,11 @@ const Home = () => (
   <>
     <Hero />
     <About />
-    <Education />
-    <Skills />
+     <Projects />
+      <Skills />
     <Experience />
-    <Projects />
+      <Education />
+   
   </>
 );
 

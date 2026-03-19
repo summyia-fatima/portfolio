@@ -1,18 +1,17 @@
-import React, { useEffect } from "react"; // useEffect add kiya
+import React, { useEffect } from "react";
 import { Download } from "lucide-react";
-import { useLocation } from "react-router-dom"; // useLocation add kiya
+import { useLocation } from "react-router-dom";
+import summyiaPic from "/summyia-pic.png";
 
 const Hero = () => {
-  const resumeLink = "https://drive.google.com/file/d/1syqv5Mhb-q6u8fi-C9aSZ0iL6XDOoiuY/view?usp=sharing";
+  const resumeLink =
+    "https://drive.google.com/file/d/1syqv5Mhb-q6u8fi-C9aSZ0iL6XDOoiuY/view?usp=sharing";
   const location = useLocation();
 
-  // --- Scroll Fix Logic Start ---
   useEffect(() => {
-    // Agar Navbar ne koi targetId bheja hai (Detail page se wapas aate waqt)
     if (location.state?.targetId) {
       const id = location.state.targetId;
-      
-      // Thora delay taake page load ho jaye phir scroll kare
+
       const timer = setTimeout(() => {
         const element = document.getElementById(id);
         if (element) {
@@ -32,44 +31,79 @@ const Hero = () => {
       return () => clearTimeout(timer);
     }
   }, [location]);
-  // --- Scroll Fix Logic End ---
 
   return (
-    <section id="hero" className="w-full bg-black text-white py-10 px-4 flex items-center mt-18">
-      <div className="mx-auto max-w-6xl flex flex-col md:flex-row items-center justify-between gap-10">
-        
-        {/* IMAGE SECTION */}
-        <div className="w-full md:w-1/2 flex justify-center md:justify-end order-1 md:order-2">
-          <div className="relative w-54 h-54 sm:w-80 sm:h-80 md:w-[450px] md:h-[450px] bg-[#B06014] rounded-full flex justify-center items-center overflow-hidden border-4 md:border-8 border-black shadow-2xl">
-            <img
-              src="Group 4.png"
-              alt="Profile"
-              className="w-[85%] h-auto object-contain"
-            />
+    <section
+      id="hero"
+      className="relative w-full  bg-black text-white pt-30 pb-12 px-4 sm:px-6 lg:px-8 overflow-hidden"
+    >
+      {/* Background Glow */}
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute top-10 left-1/2 -translate-x-1/2 w-72 h-72 bg-[#B06014]/20 blur-3xl rounded-full" />
+        <div className="absolute bottom-0 right-0 w-64 h-64 bg-white/5 blur-3xl rounded-full" />
+      </div>
+
+      <div className="max-w-6xl mx-auto grid lg:grid-cols-2   items-center gap-10 lg:gap-16">
+        {/* TEXT SECTION */}
+        <div className="text-center lg:text-left order-2 lg:order-1">
+          <span className="inline-block mb-5 px-4 py-1 text-xs tracking-[0.2em] uppercase text-gray-300 border border-white/10 rounded-full bg-white/5">
+            Available For Work
+          </span>
+
+          <h1 className="font-bold leading-tight">
+            <span className="block text-[#B06014] text-2xl sm:text-3xl md:text-[42px] xl:text-[46px]">
+              UI / UX Designer
+            </span>
+            <span className="block text-white text-2xl sm:text-3xl md:text-[42px] xl:text-[46px] mt-2">
+              & Frontend Web Developer
+            </span>
+          </h1>
+
+          <p className="mt-6 max-w-xl mx-auto lg:mx-0 text-sm sm:text-base text-gray-400 leading-7">
+            Transform your vision into high-performing digital products by
+            combining intuitive UI/UX design with clean, scalable frontend
+            development for web and mobile experiences.
+          </p>
+
+          <div className="mt-8 flex flex-col sm:flex-row gap-4 items-center lg:items-start justify-center lg:justify-start">
+            <button
+              onClick={() => window.open(resumeLink, "_blank")}
+              className="group flex items-center gap-2 bg-[#B06014] px-7 py-3 rounded-full text-sm font-semibold uppercase tracking-wider text-white hover:bg-[#8f4d12] transition-all shadow-lg shadow-[#B06014]/30"
+            >
+              <span>Download Resume</span>
+              <Download
+                size={18}
+                className="transition-transform group-hover:translate-y-[2px]"
+              />
+            </button>
           </div>
         </div>
 
-        {/* TEXT SECTION */}
-        <div className="flex-1 w-full md:w-1/2 flex flex-col space-y-6 items-center md:items-start text-center md:text-left order-2 md:order-1">
-          <span className="font-bold leading-none">
-            <span className="text-[#B06014] text-2xl md:text-5xl">
-              UI / UX Designer &
-            </span>
-            <br />
-            <span className="text-white text-2xl md:text-5xl">
-              Frontend Web / App Developer
-            </span>
-          </span>
-          <p className="text-gray-400 text-base md:text-lg max-w-lg">
-            Transform your vision into high-performing digital products by bridging intuitive UI/UX design with scalable development.
-          </p>
-          <button
-            onClick={() => window.open(resumeLink, "_blank")}
-            className="w-fit flex items-center space-x-2 bg-[#B06014] rounded-full px-8 py-2.5 text-xs font-bold uppercase tracking-widest text-white hover:bg-zinc-900 transition-all border border-white/5 shadow-xl"
-          >
-            <span>Resume</span>
-            <Download size={18} />
-          </button>
+        {/* IMAGE SECTION */}
+        <div className="flex justify-center lg:justify-end order-1 lg:order-2 w-full">
+          <div className="relative w-[180px] sm:w-[220px] md:w-[260px] lg:w-[300px]">
+            {/* Glow */}
+            <div className="absolute inset-0 bg-[#B06014]/20 blur-2xl rounded-3xl scale-105" />
+
+            {/* Card */}
+            <div className="relative bg-white/5 border border-white/10 backdrop-blur-md rounded-3xl p-3 shadow-2xl">
+              <div className="overflow-hidden rounded-2xl h-[260px] sm:h-[300px] md:h-[340px] lg:h-[380px]">
+                <img
+                  src={summyiaPic}
+                  alt="Summyia"
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+            </div>
+
+            {/* Floating Tag */}
+            <div className="absolute -bottom-5 -left-5 bg-zinc-900/90 border border-white/10 rounded-xl px-4 py-2 backdrop-blur-md shadow-xl">
+              <p className="text-xs text-gray-400">Specialized In</p>
+              <p className="text-sm font-semibold text-white">
+                UI/UX • React • Responsive
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

@@ -9,10 +9,11 @@ const Navbar = () => {
 
   const navLinks = [
     { name: 'About', href: 'about' },
-    { name: 'Education', href: 'education' },
+        { name: 'Projects', href: 'projects' },
     { name: 'Skills', href: 'skills' },
     { name: 'Experience', href: 'experience' },
-    { name: 'Projects', href: 'projects' },
+        { name: 'Education', href: 'education' },
+
   ];
 
   const handleScroll = (id) => {
