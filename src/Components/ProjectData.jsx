@@ -532,62 +532,8 @@ export const projectData = [
     tech: ["Canva", "Social Media Marketing", "Ad Creatives"],
   },
 
-  {
-    id: 18,
-    title: "Dollar Shop Kamra: Localized Retail UX",
-    category: "UI/UX",
-    description:
-      "A region-specific e-commerce interface designed for the local Kamra and Attock retail market.",
-    longDescription: [
-      {
-        type: "main",
-        content:
-          "This UI/UX project focuses on creating a digital shopping experience tailored specifically for local communities. The design incorporates regional logistics requirements and payment preferences.",
-      },
-      { type: "heading", content: "Localized Features" },
-      {
-        type: "bullet",
-        content: "Local delivery flow based on nearby landmarks.",
-      },
-      {
-        type: "bullet",
-        content: "Cash-on-delivery optimized checkout process.",
-      },
-      { type: "bullet", content: "Local pickup option integration." },
-      {
-        type: "bullet",
-        content: "Simplified shopping interface for community users.",
-      },
-    ],
-    images: ["h3.jpg", "5r.png", "ml.png", "va.png"],
-    link: "#",
-    tech: ["Figma", "UI Design", "User Research"],
-  },
-    {
-    id: 19,
-    title: "Dollar Store: Unified Brand Identity System",
-    category: "Marketing Design",
-    description:
-      "A comprehensive brand identity system created to maintain visual consistency across all retail marketing materials.",
-    longDescription: [
-      {
-        type: "main",
-        content:
-          "This project focuses on developing a cohesive brand identity system for the Dollar Store retail brand. The design guidelines ensure consistent branding across online platforms, print materials, and promotional campaigns.",
-      },
-      { type: "heading", content: "Brand Strategy" },
-      { type: "bullet", content: "Modernized brand logo and visual elements." },
-      { type: "bullet", content: "Defined color palette for retail identity." },
-      { type: "bullet", content: "Typography system for marketing materials." },
-      {
-        type: "bullet",
-        content: "Reusable design components for marketing campaigns.",
-      },
-    ],
-    images: ["5r.png", "ml.png", "va.png"],
-    link: "#",
-    tech: ["Figma", "Adobe Illustrator", "Brand Strategy"],
-  },
+  
+   
     {
     id: 20,
     title: "Drinks Cafe: Premium Tri-Fold Branding",
