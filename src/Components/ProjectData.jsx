@@ -2,9 +2,9 @@
 
 export const projectData = [
 
-
+// correct 
   {
-    id: 3,
+    id: 1,
     title: "Skylarks IT: Corporate Tech Solution UI",
     category: "UI/UX",
     description:
@@ -40,9 +40,9 @@ export const projectData = [
     link: "#",
     tech: ["Figma", "Web Design", "Corporate Branding"],
   },
-
+// correct 
   {
-    id: 4,
+    id: 2,
     title: "Dollar Store: E-Commerce Marketplace UX",
     category: "UI/UX",
     description:
@@ -68,13 +68,15 @@ export const projectData = [
       },
       { type: "bullet", content: "Optimized mobile shopping interface." },
     ],
-    images: ["portfolio thumbnail template  (5).png","4.png","ml.png", "va.png", "5r.png", "098.png", "re.png"],
+    images: ["portfolio thumbnail template  (5).png","4.png","ml.png", "va.png", "re.png"],
     link: "#",
     tech: ["Figma", "E-commerce UX", "Mobile UI"],
   },
-// 1. Energy Card Project (Red Theme)
+
+// correct 
+
   {
-    id: 1,
+    id: 3,
     title: "Energy Card: High-Performance Landing Page",
     category: "UI/UX & Web Design",
     description: "A dynamic and energetic landing page designed for a revolutionary energy supplement brand.",
@@ -85,14 +87,14 @@ export const projectData = [
       { type: "bullet", content: "Community-focused social proof section with integrated video testimonials." },
       { type: "bullet", content: "Custom step-by-step usage guide with clean iconography." }
     ],
-    images: ["portfolio thumbnail template  (2).jpg","portfolio thumbnail template  (13).png"], // Aap apni array yahan update kar lein
+    images: ["portfolio thumbnail template  (2).jpg","portfolio thumbnail template  (13).png","jnj.jpg"], // Aap apni array yahan update kar lein
     link: "#",
     tech: ["Figma", "React", "Tailwind CSS", "Brand Identity"]
   },
 
-  // 2. BulkBuyMe Project (White/Orange Theme)
+// correct 
   {
-    id: 2,
+    id: 4,
     title: "BulkBuyMe: Multi-Vendor Marketplace",
     category: "Web Development",
     description: "A comprehensive B2B and B2C marketplace layout focusing on bulk deals and local services.",
@@ -103,14 +105,14 @@ export const projectData = [
       { type: "bullet", content: "Strategic 'Super Deal' hero section for high-conversion promotions." },
       { type: "bullet", content: "Responsive card-based UI for better mobile and desktop consistency." }
     ],
-    images: ["portfolio thumbnail template .jpg","portfolio thumbnail template  (12).png"],
+    images: ["portfolio thumbnail template .jpg","portfolio thumbnail template  (12).png","soup.png"],
     link: "#",
     tech: ["Next.js", "Figma", "E-commerce UI", "Responsive Design"]
   },
+// correct 
 
-  // 3. Bio Prime Peptides (Green Theme)
   {
-    id: 3,
+    id: 5,
     title: "Bio Prime: Pharmaceutical E-commerce",
     category: "UI/UX Design",
     description: "A professional and clean healthcare-focused interface for research-grade peptides.",
@@ -121,14 +123,15 @@ export const projectData = [
       { type: "bullet", content: "Product grid with clear concentration and dosage labeling." },
       { type: "bullet", content: "Trust-building 'Why Choose Us' section with custom iconography." }
     ],
-    images: ["portfolio thumbnail template  (7).png","portfolio thumbnail template  (8).png"],
+    images: ["portfolio thumbnail template  (7).png","portfolio thumbnail template  (8).png","green.jpg"
+    ],
     link: "#",
     tech: ["Figma", "Web Design", "Medical UI", "Conversion Optimization"]
   },
+// correct 
 
-  // 4. Dragon Card Shop (Dark/Orange Theme)
   {
-    id: 4,
+    id: 6,
     title: "Dragon Card: Collectible TCG Marketplace",
     category: "Web Development",
     description: "A premium dark-mode e-commerce site for trading card game (TCG) enthusiasts.",
@@ -139,12 +142,12 @@ export const projectData = [
       { type: "bullet", content: "User review system with star ratings and detailed customer feedback." },
       { type: "bullet", content: "Modern newsletter integration for TCG drop alerts and sales." }
     ],
-    images: ["1.png","portfolio thumbnail template  (1).png"],
+    images: ["1.png","portfolio thumbnail template  (1).png","12.png", "13.jpg","14.png","15.jpg","16.jpg"],
     link: "#",
     tech: ["React.js", "Figma", "Dark Mode UI", "Gaming Brand Identity"]
   },
   {
-    id: 11,
+    id: 7,
     title: "AI Email Assistant: Intelligent UX Dashboard",
     category: "UI/UX",
     description:
@@ -170,7 +173,7 @@ export const projectData = [
   },
 
   {
-    id: 12,
+    id: 8,
     title: "AI Email Assistant: React Desktop Application",
     category: "Web Development",
     description:
@@ -200,7 +203,7 @@ export const projectData = [
   },
 
   {
-    id: 13,
+    id: 9,
     title: "Anjoma Zone: Secure Rental Checkout UX",
     category: "UI/UX",
     description:
@@ -232,7 +235,7 @@ export const projectData = [
   },
 
   {
-    id: 14,
+    id: 10,
     title: "Dollar Store: Category-Focused Print Design",
     category: "Marketing Design",
     description:
@@ -264,7 +267,7 @@ export const projectData = [
   },
 
   {
-    id: 15,
+    id: 11,
     title: "Mamma’s Noodles: Mascot & Visual Identity",
     category: "Marketing Design",
     description:
@@ -296,7 +299,7 @@ export const projectData = [
   },
 
   {
-    id: 16,
+    id: 12,
     title: "Qmulate (Company Website) - Frontend",
     category: "Web Development",
     description:
@@ -332,7 +335,7 @@ export const projectData = [
   },
 
   {
-    id: 17,
+    id: 12,
     title: "Twitter Clone",
     category: "Web Development",
     description:
@@ -365,7 +368,7 @@ export const projectData = [
   },
 
   {
-    id: 18,
+    id: 13,
     title: "Prayer Timing App",
     category: "Mobile App Development",
     description:
@@ -391,7 +394,7 @@ export const projectData = [
   },
 
   {
-    id: 19,
+    id: 14,
     title: "Prayer Tracking App",
     category: "Mobile App Development",
     description:
@@ -413,7 +416,7 @@ export const projectData = [
     tech: ["React Native", "Expo", "GitHub", "VS Code"],
   },
     {
-    id: 1,
+    id: 15,
     title: "FlashDash: Rider-Centric Delivery UI/UX",
     category: "UI/UX",
     description:
@@ -451,7 +454,7 @@ export const projectData = [
   },
 
   {
-    id: 2,
+    id: 16,
     title: "Smart Dairy: AI-Powered Livestock Care UX",
     category: "UI/UX",
     description:
@@ -495,7 +498,7 @@ export const projectData = [
     tech: ["Figma", "AI Integration UX", "Livestock Management"],
   },
     {
-    id: 9,
+    id: 17,
     title: "Hair Bliss: Organic Social Media Campaign",
     category: "Marketing Design",
     description:
@@ -530,7 +533,7 @@ export const projectData = [
   },
 
   {
-    id: 10,
+    id: 18,
     title: "Dollar Shop Kamra: Localized Retail UX",
     category: "UI/UX",
     description:
@@ -561,7 +564,7 @@ export const projectData = [
     tech: ["Figma", "UI Design", "User Research"],
   },
     {
-    id: 8,
+    id: 19,
     title: "Dollar Store: Unified Brand Identity System",
     category: "Marketing Design",
     description:
@@ -586,7 +589,7 @@ export const projectData = [
     tech: ["Figma", "Adobe Illustrator", "Brand Strategy"],
   },
     {
-    id: 6,
+    id: 20,
     title: "Drinks Cafe: Premium Tri-Fold Branding",
     category: "Marketing Design",
     description:
@@ -621,7 +624,7 @@ export const projectData = [
   },
 
   {
-    id: 7,
+    id: 21,
     title: "Dollar Store: Promotional Retail Campaign",
     category: "Marketing Design",
     description:
