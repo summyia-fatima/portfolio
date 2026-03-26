@@ -5,7 +5,7 @@ import summyiaPic from "/summyia-pic.png";
 
 const Hero = () => {
   const resumeLink =
-    "https://drive.google.com/file/d/1syqv5Mhb-q6u8fi-C9aSZ0iL6XDOoiuY/view?usp=sharing";
+    "https://drive.google.com/file/d/1WpQPyIhHLXJLxzIIA_5lgc_noPNvBHDp/view?usp=sharing";
   const location = useLocation();
 
   useEffect(() => {
