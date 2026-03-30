@@ -78,7 +78,7 @@ export const projectData = [
   {
     id: 3,
     title: "Energy Card: High-Performance Landing Page",
-    category: "UI/UX & Web Design",
+    category: "UI/UX",
     description: "A dynamic and energetic landing page designed for a revolutionary energy supplement brand.",
     longDescription: [
       { type: "main", content: "This project showcases a bold, red-themed aesthetic to match the high-energy nature of the product. The focus was on creating a fast-paced, conversion-friendly flow for 'Energy Card' users." },
@@ -96,7 +96,7 @@ export const projectData = [
   {
     id: 4,
     title: "BulkBuyMe: Multi-Vendor Marketplace",
-    category: "Web Development",
+    category: "UI/UX",
     description: "A comprehensive B2B and B2C marketplace layout focusing on bulk deals and local services.",
     longDescription: [
       { type: "main", content: "BulkBuyMe is designed to handle multiple categories like Restaurants, Retails, and Services in a clean, organized grid system that emphasizes accessibility and large-scale browsing." },
@@ -114,7 +114,7 @@ export const projectData = [
   {
     id: 5,
     title: "Bio Prime: Pharmaceutical E-commerce",
-    category: "UI/UX Design",
+    category: "UI/UX",
     description: "A professional and clean healthcare-focused interface for research-grade peptides.",
     longDescription: [
       { type: "main", content: "Designed with a clinical and trustworthy green-themed palette, this project focuses on clarity, scientific data presentation, and secure shopping experiences for laboratory products." },
@@ -133,7 +133,7 @@ export const projectData = [
   {
     id: 6,
     title: "Dragon Card: Collectible TCG Marketplace",
-    category: "Web Development",
+    category: "UI/UX",
     description: "A premium dark-mode e-commerce site for trading card game (TCG) enthusiasts.",
     longDescription: [
       { type: "main", content: "This project features a dark, immersive aesthetic to cater to the gaming community. It highlights rare card collections and high-value 'Combo Decks' with a focus on visual detail." },
