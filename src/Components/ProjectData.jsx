@@ -335,7 +335,7 @@ export const projectData = [
   },
 
   {
-    id: 12,
+    id: 13,
     title: "Twitter Clone",
     category: "Web Development",
     description:
@@ -368,7 +368,7 @@ export const projectData = [
   },
 
   {
-    id: 13,
+    id: 14,
     title: "Prayer Timing App",
     category: "Mobile App Development",
     description:
@@ -394,7 +394,7 @@ export const projectData = [
   },
 
   {
-    id: 14,
+    id: 15,
     title: "Prayer Tracking App",
     category: "Mobile App Development",
     description:
@@ -416,7 +416,7 @@ export const projectData = [
     tech: ["React Native", "Expo", "GitHub", "VS Code"],
   },
     {
-    id: 15,
+    id: 16,
     title: "FlashDash: Rider-Centric Delivery UI/UX",
     category: "UI/UX",
     description:
@@ -454,7 +454,7 @@ export const projectData = [
   },
 
   {
-    id: 16,
+    id: 17,
     title: "Smart Dairy: AI-Powered Livestock Care UX",
     category: "UI/UX",
     description:
@@ -498,7 +498,7 @@ export const projectData = [
     tech: ["Figma", "AI Integration UX", "Livestock Management"],
   },
     {
-    id: 17,
+    id: 18,
     title: "Hair Bliss: Organic Social Media Campaign",
     category: "Marketing Design",
     description:
@@ -535,7 +535,7 @@ export const projectData = [
   
    
     {
-    id: 20,
+    id: 19,
     title: "Drinks Cafe: Premium Tri-Fold Branding",
     category: "Marketing Design",
     description:
@@ -570,7 +570,7 @@ export const projectData = [
   },
 
   {
-    id: 21,
+    id: 20,
     title: "Dollar Store: Promotional Retail Campaign",
     category: "Marketing Design",
     description:
