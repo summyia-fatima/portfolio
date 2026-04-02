@@ -9,20 +9,21 @@ const Navbar = () => {
 
   const navLinks = [
     { name: 'About', href: 'about' },
-        { name: 'Projects', href: 'projects' },
+    { name: 'Projects', href: 'projects' },
     { name: 'Skills', href: 'skills' },
     { name: 'Experience', href: 'experience' },
-        { name: 'Education', href: 'education' },
-
+    { name: 'Education', href: 'education' },
   ];
 
-  const handleScroll = (id) => {
-    // Check karein ke kya hum Home page par hain
+const handleScroll = (id) => {
+  if (id === 'projects') {
+    // Navigate to the 'portfolio' page when 'Projects' is clicked
+    navigate('/portfolio');
+  } else {
     if (location.pathname === '/') {
-      // Agar home par hain, toh purana scroll logic
       const element = document.getElementById(id);
       if (element) {
-        const offset = 100; 
+        const offset = 100;
         const bodyRect = document.body.getBoundingClientRect().top;
         const elementRect = element.getBoundingClientRect().top;
         const elementPosition = elementRect - bodyRect;
@@ -30,22 +31,25 @@ const Navbar = () => {
 
         window.scrollTo({
           top: offsetPosition,
-          behavior: 'smooth'
+          behavior: 'smooth',
         });
       }
     } else {
-      // Agar hum detail page par hain, toh pehle Home par jayein phir scroll karein
       navigate('/', { state: { targetId: id } });
     }
-    setIsOpen(false);
-  };
+  }
+};
 
   return (
     <nav className="w-full bg-black py-4 px-4 fixed top-0 left-0 right-0 z-[100]">
       <div className="mx-auto flex max-w-6xl items-center justify-between rounded-full bg-[#B06014] px-6 md:px-10 py-3 shadow-[0_10px_40px_rgba(176,96,20,0.3)] border border-white/10">
         
-        {/* Logo ko Link bana diya taake home par ja sakein */}
-        <Link to="/" className="flex items-center hover:scale-105 transition-transform duration-300">
+        {/* Logo click to scroll to Hero section */}
+        <Link
+          to="#"
+          onClick={() => handleScroll('hero')} // Scroll to Hero section when clicked
+          className="flex items-center hover:scale-105 transition-transform duration-300"
+        >
           <img src="/logo.png" alt="Logo" className="h-9 w-9 md:h-10 md:w-10 object-contain" />
         </Link>
 
@@ -63,14 +67,14 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center space-x-4">
-          <button 
+          <button
             onClick={() => handleScroll('footer')}
             className="hidden md:block rounded-full bg-black px-8 py-2.5 text-xs font-bold uppercase tracking-widest text-white hover:bg-zinc-900 transition-all border border-white/5 shadow-xl"
           >
             Contact Me
           </button>
-          
-          <button 
+
+          <button
             className="md:hidden text-black p-1 hover:bg-black/10 rounded-lg transition-colors"
             onClick={() => setIsOpen(!isOpen)}
           >
@@ -79,10 +83,12 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu (Isme bhi handleScroll update ho gaya) */}
-      <div className={`fixed inset-x-4 top-24 transform transition-all duration-500 ease-in-out overflow-y-auto md:hidden ${
+      {/* Mobile Menu */}
+      <div
+        className={`fixed inset-x-4 top-24 transform transition-all duration-500 ease-in-out overflow-y-auto md:hidden ${
           isOpen ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0 pointer-events-none'
-        }`}>
+        }`}
+      >
         <div className="bg-[#1A0F07]/95 backdrop-blur-xl rounded-[2.5rem] p-10 flex flex-col items-center space-y-8 shadow-[0_20px_60px_rgba(0,0,0,0.8)] border border-[#B06014]/20">
           <div className="flex flex-col items-center space-y-6 w-full">
             {navLinks.map((link, index) => (
@@ -98,7 +104,7 @@ const Navbar = () => {
               </button>
             ))}
           </div>
-          <button 
+          <button
             onClick={() => handleScroll('footer')}
             className="w-full bg-[#B06014] rounded-full px-8 py-2.5 text-[14px] font-bold uppercase tracking-widest text-black hover:bg-[#d37823] transition-all border border-white/5 shadow-xl"
           >
@@ -109,5 +115,6 @@ const Navbar = () => {
     </nav>
   );
 };
+
 
 export default Navbar;

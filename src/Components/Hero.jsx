@@ -46,9 +46,9 @@ const Hero = () => {
       <div className="max-w-6xl mx-auto grid lg:grid-cols-2   items-center gap-10 lg:gap-16">
         {/* TEXT SECTION */}
         <div className="text-center lg:text-left order-2 lg:order-1">
-          <span className="inline-block mb-5 px-4 py-1 text-xs tracking-[0.2em] uppercase text-gray-300 border border-white/10 rounded-full bg-white/5">
-            Available For Work
-          </span>
+         <span className="inline-block mb-5 px-4 py-1 text-xs tracking-[0.2em]  text-gray-300 border border-white/10 rounded-full bg-green-600 text-white shadow-md shadow-green-500/30 hover:shadow-green-500/60 transform transition-all hover:scale-105">
+  Available For Work
+</span>
 
           <h1 className="font-bold leading-tight">
             <span className="block text-[#B06014] text-2xl sm:text-3xl md:text-[42px] xl:text-[46px]">
