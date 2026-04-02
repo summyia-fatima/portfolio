@@ -50,7 +50,7 @@ const handleScroll = (id) => {
           onClick={() => handleScroll('hero')} // Scroll to Hero section when clicked
           className="flex items-center hover:scale-105 transition-transform duration-300"
         >
-          <img src="/logo.png" alt="Logo" className="h-9 w-9 md:h-10 md:w-10 object-contain" />
+          <img src="/logo.png" alt="Logo8" className="h-9 w-9 md:h-10 md:w-10 object-contain" />
         </Link>
 
         {/* Desktop Links */}
