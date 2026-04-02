@@ -7,7 +7,7 @@ import Skills from "./Components/Skills";
 import Experience from "./Components/Experience";
 import Projects from "./Components/Projects";
 import ProjectDetail from "./Components/ProjectDetail"; // Naya component
-import Portfolio from "./Components/Portfolio"; // Portfolio Component
+import Portfolio from "./Components/portfolio"; // Portfolio Component
 import Footer from "./Components/Footer";
 
 // Ek naya function banayein jo saare home sections ko hold kare
