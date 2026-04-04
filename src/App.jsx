@@ -7,7 +7,7 @@ import Skills from "./Components/Skills";
 import Experience from "./Components/Experience";
 import Projects from "./Components/Projects";
 import ProjectDetail from "./Components/ProjectDetail"; // Dedicated project detail page component
-import Portfolio from "./Components/Portfolio"; // Portfolio component
+import Portfolio from "./Components/portfolio"; // Portfolio component
 import Footer from "./Components/Footer";
 
 // Home component that holds all the sections
