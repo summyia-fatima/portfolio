@@ -6,11 +6,11 @@ import Education from "./Components/Education";
 import Skills from "./Components/Skills";
 import Experience from "./Components/Experience";
 import Projects from "./Components/Projects";
-import ProjectDetail from "./Components/ProjectDetail"; // Naya component
-import Portfolio from "./Components/portfolio"; // Portfolio Component
+import ProjectDetail from "./Components/ProjectDetail"; // Dedicated project detail page component
+import Portfolio from "./Components/Portfolio"; // Portfolio component
 import Footer from "./Components/Footer";
 
-// Ek naya function banayein jo saare home sections ko hold kare
+// Home component that holds all the sections
 const Home = () => (
   <>
     <Hero />
@@ -26,18 +26,24 @@ function App() {
   return (
     <Router>
       <div className="min-h-screen bg-black overflow-x-hidden">
-        {/* Navbar hamesha dikhega */}
-        <Navbar /> 
-        
+        {/* Navbar is always visible */}
+        <Navbar />
+
         <Routes>
-          {/* Main Portfolio Page */}
+          {/* Main Home Page */}
           <Route path="/" element={<Home />} />
+          
+          {/* Portfolio Page */}
           <Route path="/portfolio" element={<Portfolio />} />
-          {/* Dedicated Project Detail Page */}
+
+          {/* Project Detail Page (dynamic route based on ID) */}
           <Route path="/project/:id" element={<ProjectDetail />} />
+
+          {/* Catch-all for undefined routes, direct to home page or any other fallback */}
+          <Route path="*" element={<Home />} />
         </Routes>
 
-        {/* Footer hamesha dikhega */}
+        {/* Footer is always visible */}
         <Footer />
       </div>
     </Router>

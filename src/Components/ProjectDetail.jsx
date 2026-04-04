@@ -10,16 +10,19 @@ import {
   LayoutGrid,
   Zap,
 } from "lucide-react";
-import { projectData } from "./ProjectData";
+import { projectData } from "./ProjectData"; // Ensure this data is imported correctly
 
 const ProjectDetail = () => {
   const { id } = useParams();
-  const project = projectData.find((p) => p.id === parseInt(id));
+  
+  // Find the project using the id from the URL params
+  const project = projectData.find((p) => p.id === parseInt(id)); 
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, [id]);
 
+  // If the project is not found, show a 'Back to Home' link
   if (!project)
     return (
       <div className="h-screen flex items-center justify-center text-white bg-[#050505]">
