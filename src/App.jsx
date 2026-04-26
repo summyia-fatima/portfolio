@@ -9,6 +9,7 @@ import Projects from "./Components/Projects";
 import ProjectDetail from "./Components/ProjectDetail"; // Dedicated project detail page component
 import Portfolio from "./Components/portfolio"; // Portfolio component
 import Footer from "./Components/Footer";
+import Services from "./Components/Services";
 
 // Home component that holds all the sections
 const Home = () => (
@@ -16,9 +17,12 @@ const Home = () => (
     <Hero />
     <About />
     <Projects />
-    <Skills />
-    <Experience />
+        <Services />
+         <Skills />    
+             <Experience />
+ 
     <Education />
+
   </>
 );
 

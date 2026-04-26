@@ -46,20 +46,20 @@ const Hero = () => {
       <div className="max-w-6xl mx-auto grid lg:grid-cols-2   items-center gap-10 lg:gap-16">
         {/* TEXT SECTION */}
         <div className="text-center lg:text-left order-2 lg:order-1">
-         <span className="inline-block mb-5 px-4 py-1 text-xs tracking-[0.2em]  text-gray-300 border border-white/10 rounded-full bg-green-600 text-white shadow-md shadow-green-500/30 hover:shadow-green-500/60 transform transition-all hover:scale-105">
-  Available For Work
-</span>
+          <span className="inline-block mb-5 px-4 py-1 text-xs tracking-[0.2em]  text-gray-300 border border-white/10 rounded-full bg-green-600 text-white shadow-md shadow-green-500/30 hover:shadow-green-500/60 transform transition-all hover:scale-105">
+            Available For Work
+          </span>
 
-          <h1 className="font-bold leading-tight">
-            <span className="block text-[#B06014] text-2xl sm:text-3xl md:text-[42px] xl:text-[46px]">
-              UI / UX Designer
-            </span>
-            <span className="block text-white text-2xl sm:text-3xl md:text-[42px] xl:text-[46px] mt-2">
-              & Frontend Web Developer
-            </span>
-          </h1>
-
-          <p className="mt-6 max-w-xl mx-auto lg:mx-0 text-sm sm:text-base text-gray-400 leading-7">
+  <h1 className="font-medium leading-tight">
+  <span className="block text-[#B06014] text-2xl md:text-[38px]">
+    UI/UX Designer <h1> & Developer</h1>
+  </span>
+ 
+</h1>
+ <span className="block text-white text-[8px] md:text-[20px] mt-2">
+    Building Scalable Web & Desktop Applications
+  </span>
+          <p className="mt-3 max-w-xl mx-auto lg:mx-0 text-sm sm:text-base text-gray-400 leading-7">
             Transform your vision into high-performing digital products by
             combining intuitive UI/UX design with clean, scalable frontend
             development for web and mobile experiences.
@@ -100,7 +100,7 @@ const Hero = () => {
             <div className="absolute -bottom-5 -left-5 bg-zinc-900/90 border border-white/10 rounded-xl px-4 py-2 backdrop-blur-md shadow-xl">
               <p className="text-xs text-gray-400">Specialized In</p>
               <p className="text-sm font-semibold text-white">
-                UI/UX • React • Responsive
+                UI/UX • React • Next Js • Responsive
               </p>
             </div>
           </div>

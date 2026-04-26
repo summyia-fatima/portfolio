@@ -1,7 +1,7 @@
 import React from "react";
 
 const About = () => {
-  const aboutImage = "https://images.unsplash.com/photo-1558655146-d09347e92766?w=800&h=600&fit=crop";
+  const aboutImage = "/banner3.png";
 
   // Smooth Scroll Function
   const scrollToFooter = () => {

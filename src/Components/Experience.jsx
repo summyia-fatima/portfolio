@@ -35,27 +35,24 @@ const certifications = [
       title: "Figma UI/UX Design Essentials",
       issuer: "Skylarks IT Solution",
       date: "2024",
-      link: "https://www.skillshare.com/"
     },
 
     {
       title: "Frontend Web Development",
       issuer: "CodeAlpha",
       date: "2023",
-      link: "#"
     },
 
       {
       title: "UI/UX Designer - Figma ",
       issuer: "Development Hub Corporation",
       date: "2026",
-      link: "#"
     },
 
 
   ];
   return (
-    <section id="experience" className="w-full bg-black py-10  px-6 font-sans ">
+    <section id="experience" className="w-full bg-black py-0  px-6 font-sans ">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col items-center mb-20">
             <h2 className="text-[#B06014] text-3xl md:text-4xl font-bold  text-center tracking-widest uppercase">
