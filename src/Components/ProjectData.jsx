@@ -3,6 +3,133 @@
 export const projectData = [
 
   // ui ux project 
+
+// pet website
+
+{
+  id: 0,
+  title: "Pawsona - Custom Pet Gifts Website Redesign",
+  category: "UI/UX",
+  role: ["UI Designer"],
+
+  timeline: {
+    start: "2026-07-12",
+    end: "2026-07-15"
+  },
+
+  /* ---------------- TOOLS USED ---------------- */
+  tools_used: [
+    "Figma",
+    "FigJam",
+    "Adobe Photoshop",
+    "Canva"
+  ],
+
+  /* ---------------- OVERVIEW ---------------- */
+  overview:
+    "Pawsona is a custom pet gifts and personalization platform where pet owners can transform their favorite pet photos into stickers, labels, framed artwork, and personalized keepsakes. This redesign focuses on creating a premium shopping experience by improving navigation, visual hierarchy, emotional storytelling, and overall usability.",
+
+  /* ---------------- ABOUT ---------------- */
+  about:
+    "Pawsona is an eCommerce platform dedicated to personalized pet products. Users can upload their pet photos and customize them into unique gifts, framed art, stickers, apparel, and other memorable products through a simple and enjoyable shopping experience.",
+
+  /* ---------------- PROBLEM / SOLUTION ---------------- */
+  problem_solution: [
+    {
+      problem:
+        "The original homepage lacked a clear visual hierarchy, making it difficult for users to understand the brand and browse products.",
+      solution:
+        "Redesigned the hero section with stronger messaging, engaging visuals, and clear call-to-action buttons to immediately communicate the platform's value."
+    },
+    {
+      problem:
+        "Product categories and featured collections were difficult to discover because of inconsistent layouts.",
+      solution:
+        "Introduced structured sections for featured products, categories, and new arrivals using modern card-based layouts and consistent spacing."
+    },
+    {
+      problem:
+        "The customization process wasn't clearly explained, leading to confusion for first-time visitors.",
+      solution:
+        "Designed a simple three-step 'How It Works' section that guides users from uploading a pet photo to receiving their personalized order."
+    },
+    {
+      problem:
+        "The website lacked emotional storytelling and trust-building elements that encourage purchases.",
+      solution:
+        "Added testimonials, brand mission, promotional sections, and lifestyle imagery to build trust and create a stronger emotional connection with pet owners."
+    }
+  ],
+
+  /* ---------------- PROTOTYPING ---------------- */
+  prototyping: {
+    prototype: true,
+
+    sketch: [
+      "pawsona/sketch.png"
+    ],
+
+    wireframe_prototype: [
+      "pawsona/wireframe.png"
+    ],
+
+    final_ui: [
+      "pawsona/s1.png"
+    ]
+  },
+
+  /* ---------------- BEFORE / AFTER ---------------- */
+  custom_compare: {
+    before: {
+      heading: "Before – Outdated Layout & Poor Product Discovery",
+      img: "pawsona/before.png"
+    },
+    after: {
+      heading: "After – Modern, Emotional & Conversion-Focused Experience",
+      img: "pawsona/s1.jpg"
+    }
+  },
+
+  /* ---------------- LESSONS LEARNED ---------------- */
+  lesson_learned: [
+    "Emotional storytelling helps increase user engagement for pet-focused brands.",
+    "Well-structured product categories improve browsing and shopping efficiency.",
+    "A simple customization flow reduces user confusion and increases conversions.",
+    "Consistent typography, spacing, and visual hierarchy create a premium shopping experience."
+  ],
+
+  /* ---------------- FIGMA ---------------- */
+  figma_link:
+    "https://www.figma.com/design/G4F8zduA3X20JONLOxfKpW/Akhtar-Projects?node-id=65-577&t=fdqBDAmAS5GYDAGB-1",
+
+  /* ---------------- ASSETS ---------------- */
+  assets: {
+    banner: [
+      "pawsona/b1.png",
+      "pawsona/b2.png",
+     
+    ],
+
+    ui_images: [
+      "pawsona/s1.jpg",
+      "pawsona/s2.jpg",
+      "pawsona/s3.jpg",
+      "pawsona/s4.jpg"
+    ]
+  },
+
+  /* ---------------- TECH STACK ---------------- */
+  tech_stack: [
+    "Figma",
+    "UX Research",
+    "Website UI Design",
+    "Design Systems",
+    "Information Architecture",
+    "E-commerce UX",
+    "Interaction Design"
+  ]
+},
+
   // notepad 
 {
   id: 1,
