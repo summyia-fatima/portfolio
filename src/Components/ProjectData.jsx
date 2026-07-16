@@ -4,6 +4,138 @@ export const projectData = [
 
   // ui ux project 
 
+  // pdf scanner 
+
+{
+  id: 200,
+  title: "PDF Scanner App - Modern Mobile UI/UX Redesign",
+  category: "UI/UX",
+  role: ["UI/UX Designer"],
+
+  timeline: {
+    start: "2026-06-15",
+    end: "2026-06-25"
+  },
+
+  /* ---------------- TOOLS USED ---------------- */
+  tools_used: [
+    "Figma",
+    "FigJam",
+    "Adobe Photoshop",
+    "Canva"
+  ],
+
+  /* ---------------- OVERVIEW ---------------- */
+  overview:
+    "This mobile app redesign was created to modernize the user experience of a PDF Scanner application. The project focused on simplifying document scanning, PDF management, OCR, file organization, and document security while creating a clean, fast, and intuitive interface. Every screen was designed with consistency, accessibility, and usability in mind, supported by interactive Figma prototyping to simulate the complete user journey.",
+
+  /* ---------------- ABOUT ---------------- */
+  about:
+    "The PDF Scanner App enables users to scan documents, convert images into PDFs, extract text using OCR, merge files, lock PDFs, organize documents, and manage digital paperwork from their mobile devices. The redesign aimed to improve navigation, reduce user effort, and create a professional experience suitable for students, professionals, and businesses.",
+
+  /* ---------------- PROBLEM / SOLUTION ---------------- */
+  problem_solution: [
+    {
+      problem:
+        "The original application contained an outdated interface with inconsistent layouts, making important tools difficult to discover.",
+      solution:
+        "Designed a modern dashboard with organized tool categories, improved spacing, consistent icons, and a clean visual hierarchy for faster task completion."
+    },
+    {
+      problem:
+        "Users needed quick access to frequently used features like Scan, OCR, Merge PDF, Lock PDF, and Image to PDF without navigating through multiple screens.",
+      solution:
+        "Created a simplified home screen with all major document tools available in a single, easy-to-access interface."
+    },
+    {
+      problem:
+        "Managing scanned documents and navigating between different document types was not intuitive.",
+      solution:
+        "Redesigned the document management experience using categorized tabs, searchable file lists, improved file cards, and quick actions for better productivity."
+    },
+    {
+      problem:
+        "The settings and premium features lacked visual clarity and did not encourage feature discovery.",
+      solution:
+        "Designed a structured settings page with grouped options, premium promotion, language selection, feedback, privacy settings, and modern interaction patterns."
+    }
+  ],
+ 
+  /* ---------------- BEFORE / AFTER ---------------- */
+  custom_compare: {
+    before: {
+      heading: "Before – Outdated Interface & Complicated User Flow",
+      img: "pdf scanner/before.png"
+    },
+    after: {
+      heading: "After – Modern, Clean & Productivity-Focused Mobile Experience",
+      img: "pdf scanner/s (1).png"
+    }
+  },
+
+  /* ---------------- LESSONS LEARNED ---------------- */
+  lesson_learned: [
+    "Keeping frequently used document tools easily accessible significantly improves productivity.",
+    "Consistent spacing, typography, and iconography create a more professional user experience.",
+    "Interactive prototyping helps validate user flows before development begins.",
+    "Simple navigation and organized document management reduce cognitive load and improve usability."
+  ],
+
+  /* ---------------- FIGMA ---------------- */
+  figma_link:
+    "https://www.figma.com/design/jrQLRHyd5KChSp3J16MvOb/PDF-Scanner?node-id=0-1&t=tfm4IhranfdinfGo-1",
+
+  /* ---------------- ASSETS ---------------- */
+  assets: {
+    banner: [
+      "pdf scanner/b1.png",
+      "pdf scanner/b2.png"
+    ],
+
+ ui_images: [
+  "pdf scanner/s (1).png",
+  "pdf scanner/s (2).png",
+  "pdf scanner/s (3).png",
+  "pdf scanner/s (4).png",
+  "pdf scanner/s (5).png",
+  "pdf scanner/s (6).png",
+  "pdf scanner/s (7).png",
+  "pdf scanner/s (8).png",
+  "pdf scanner/s (9).png",
+  "pdf scanner/s (10).png",
+  "pdf scanner/s (11).png",
+  "pdf scanner/s (12).png",
+  "pdf scanner/s (13).png",
+  "pdf scanner/s (14).png",
+  "pdf scanner/s (15).png",
+  "pdf scanner/s (16).png",
+  "pdf scanner/s (17).png",
+  "pdf scanner/s (18).png",
+  "pdf scanner/s (19).png",
+  "pdf scanner/s (20).png",
+  "pdf scanner/s (21).png",
+  "pdf scanner/s (22).png",
+  "pdf scanner/s (23).png",
+  "pdf scanner/s (24).png"
+],
+
+  /* ---------------- TECH STACK ---------------- */
+  tech_stack: [
+    "Figma",
+    "Mobile UI Design",
+    "UX Research",
+    "User Flow Design",
+    "Wireframing",
+    "Interactive Prototyping",
+    "Design System",
+    "Component Library",
+    "Information Architecture",
+    "Interaction Design",
+    "Mobile App UX",
+    "Usability Testing"
+  ]
+}},
+
 // pet website
 
 {
@@ -27,75 +159,61 @@ export const projectData = [
 
   /* ---------------- OVERVIEW ---------------- */
   overview:
-    "Pawsona is a custom pet gifts and personalization platform where pet owners can transform their favorite pet photos into stickers, labels, framed artwork, and personalized keepsakes. This redesign focuses on creating a premium shopping experience by improving navigation, visual hierarchy, emotional storytelling, and overall usability.",
+    "This website redesign was created based on the client's vision of building a simple, clean, and user-friendly experience for Pawsona Art. The client wanted customers to quickly understand the products, upload their pet photo, personalize their order, and complete checkout with as few steps as possible. My redesign focused on creating an intuitive shopping journey while maintaining a fun, trustworthy, and emotionally engaging experience that reflects the brand's mission of supporting pet rescues.",
 
   /* ---------------- ABOUT ---------------- */
   about:
-    "Pawsona is an eCommerce platform dedicated to personalized pet products. Users can upload their pet photos and customize them into unique gifts, framed art, stickers, apparel, and other memorable products through a simple and enjoyable shopping experience.",
+    "Pawsona Art is a custom pet art and rescue-focused brand that transforms pet photos into personalized artwork, gifts, stickers, prints, and keepsakes while helping promote adoptable pets and supporting local animal rescues. The redesign was created to showcase the client's growing product range in a simple and organized way while providing a strong foundation for future expansion.",
 
   /* ---------------- PROBLEM / SOLUTION ---------------- */
   problem_solution: [
     {
       problem:
-        "The original homepage lacked a clear visual hierarchy, making it difficult for users to understand the brand and browse products.",
+        "The client wanted a website that customers could understand immediately without unnecessary complexity. The existing structure didn't clearly guide users through the ordering process.",
       solution:
-        "Redesigned the hero section with stronger messaging, engaging visuals, and clear call-to-action buttons to immediately communicate the platform's value."
+        "Designed a clean homepage with a clear visual hierarchy, helping visitors quickly understand the brand, explore products, and begin their personalized order."
     },
     {
       problem:
-        "Product categories and featured collections were difficult to discover because of inconsistent layouts.",
+        "The client planned to offer multiple product categories including custom pet art, stickers, prints, 3D products, comics, and rescue stories, but needed everything organized in an easy-to-browse layout.",
       solution:
-        "Introduced structured sections for featured products, categories, and new arrivals using modern card-based layouts and consistent spacing."
+        "Created structured product sections with modern card layouts, featured collections, and dedicated category areas that make browsing simple while supporting future product growth."
     },
     {
       problem:
-        "The customization process wasn't clearly explained, leading to confusion for first-time visitors.",
+        "One of the client's highest priorities was making the customer journey effortless—from uploading a pet photo to completing checkout.",
       solution:
-        "Designed a simple three-step 'How It Works' section that guides users from uploading a pet photo to receiving their personalized order."
+        "Designed a streamlined shopping flow that guides users through choosing a product, uploading a pet photo, adding pet details, and placing an order with minimal steps."
     },
     {
       problem:
-        "The website lacked emotional storytelling and trust-building elements that encourage purchases.",
+        "The client wanted the website to reflect Pawsona's mission of supporting pet rescues while building trust with new customers.",
       solution:
-        "Added testimonials, brand mission, promotional sections, and lifestyle imagery to build trust and create a stronger emotional connection with pet owners."
+        "Introduced storytelling sections, rescue spotlights, testimonials, promotional content, and engaging visuals to strengthen the emotional connection between customers and the brand."
     }
   ],
 
   /* ---------------- PROTOTYPING ---------------- */
-  prototyping: {
-    prototype: true,
-
-    sketch: [
-      "pawsona/sketch.png"
-    ],
-
-    wireframe_prototype: [
-      "pawsona/wireframe.png"
-    ],
-
-    final_ui: [
-      "pawsona/s1.png"
-    ]
-  },
+ 
 
   /* ---------------- BEFORE / AFTER ---------------- */
   custom_compare: {
     before: {
-      heading: "Before – Outdated Layout & Poor Product Discovery",
+      heading: "Before – Complex Navigation & Unclear Customer Journey",
       img: "pawsona/before.png"
     },
     after: {
-      heading: "After – Modern, Emotional & Conversion-Focused Experience",
+      heading: "After – Simple, User-Friendly & Conversion-Focused Experience",
       img: "pawsona/s1.jpg"
     }
   },
 
   /* ---------------- LESSONS LEARNED ---------------- */
   lesson_learned: [
-    "Emotional storytelling helps increase user engagement for pet-focused brands.",
-    "Well-structured product categories improve browsing and shopping efficiency.",
-    "A simple customization flow reduces user confusion and increases conversions.",
-    "Consistent typography, spacing, and visual hierarchy create a premium shopping experience."
+    "Simple user flows create a smoother shopping experience and reduce friction during personalization.",
+    "Organizing multiple product categories with consistent layouts improves product discovery.",
+    "Storytelling and rescue-focused content help strengthen trust and emotional engagement.",
+    "Designing with future scalability in mind creates a strong foundation for adding new products and features."
   ],
 
   /* ---------------- FIGMA ---------------- */
@@ -106,8 +224,7 @@ export const projectData = [
   assets: {
     banner: [
       "pawsona/b1.png",
-      "pawsona/b2.png",
-     
+      "pawsona/b2.png"
     ],
 
     ui_images: [
