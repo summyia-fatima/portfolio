@@ -64,7 +64,7 @@ export const projectData = [
   /* ---------------- BEFORE / AFTER ---------------- */
   custom_compare: {
     before: {
-      heading: "Before – Outdated Interface & Complicated User Flow",
+    heading: <>Before – Outdated Interface & <br /> Complicated User Flow</>,
       img: "pdf scanner/before.png"
     },
     after: {
