@@ -69,7 +69,7 @@ export const projectData = [
     },
     after: {
       heading: "After – Modern, Clean & Productivity-Focused Mobile Experience",
-      img: "pdf scanner/s (1).png"
+      img: "pdf scanner/s (16).png"
     }
   },
 
