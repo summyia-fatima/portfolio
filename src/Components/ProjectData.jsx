@@ -93,30 +93,37 @@ export const projectData = [
     ],
 
  ui_images: [
-  "pdf scanner/s (1).png",
+
+
+  "pdf scanner/s (25).png",
+ "pdf scanner/s (19).png",
+  "pdf scanner/s (20).png",
+  "pdf scanner/s (21).png",
+  "pdf scanner/s (22).png",
+    "pdf scanner/s (18).png",
+ "pdf scanner/s (17).png",
+  "pdf scanner/s (16).png",
+   "pdf scanner/s (23).png",
+  "pdf scanner/s (24).png",
+    "pdf scanner/s (7).png",
+  "pdf scanner/s (8).png", 
+   "pdf scanner/s (12).png",
+ "pdf scanner/s (1).png",
   "pdf scanner/s (2).png",
   "pdf scanner/s (3).png",
   "pdf scanner/s (4).png",
   "pdf scanner/s (5).png",
   "pdf scanner/s (6).png",
-  "pdf scanner/s (7).png",
-  "pdf scanner/s (8).png",
   "pdf scanner/s (9).png",
   "pdf scanner/s (10).png",
   "pdf scanner/s (11).png",
-  "pdf scanner/s (12).png",
   "pdf scanner/s (13).png",
   "pdf scanner/s (14).png",
   "pdf scanner/s (15).png",
-  "pdf scanner/s (16).png",
-  "pdf scanner/s (17).png",
-  "pdf scanner/s (18).png",
-  "pdf scanner/s (19).png",
-  "pdf scanner/s (20).png",
-  "pdf scanner/s (21).png",
-  "pdf scanner/s (22).png",
-  "pdf scanner/s (23).png",
-  "pdf scanner/s (24).png"
+
+ 
+ 
+ 
 ],
 
   /* ---------------- TECH STACK ---------------- */
