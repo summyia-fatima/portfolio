@@ -70,7 +70,7 @@ const Hero = () => {
               onClick={() => window.open(resumeLink, "_blank")}
               className="group flex items-center gap-2 bg-[#B06014] px-7 py-3 rounded-full text-sm font-semibold uppercase tracking-wider text-white hover:bg-[#8f4d12] transition-all shadow-lg shadow-[#B06014]/30"
             >
-              <span>Download Resume</span>
+              <span>Resume</span>
               <Download
                 size={18}
                 className="transition-transform group-hover:translate-y-[2px]"
