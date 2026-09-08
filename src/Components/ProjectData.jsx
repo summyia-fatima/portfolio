@@ -124,7 +124,7 @@ export const projectData = [
 
     /* ---------------- ASSETS ---------------- */
     assets: {
-      banner: ["clubcash/b1.png", "clubcash/b2.png"],
+      banner: ["clubcash/b1.png","clubcash/b2.png", "clubcash/b3.png"],
 
       ui_images: ["clubcash/s1.png", "clubcash/s2.png"],
     },
