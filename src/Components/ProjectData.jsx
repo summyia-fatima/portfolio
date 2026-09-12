@@ -131,6 +131,9 @@ export const projectData = [
         "clubcash/s2.png",
         "clubcash/s3.png",
         "clubcash/s4.png",
+        "clubcash/s5.png",
+        "clubcash/s6.png",
+        "clubcash/s7.png",
       ],
     },
 
