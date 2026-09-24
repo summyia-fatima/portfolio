@@ -3,6 +3,272 @@
 export const projectData = [
   // ui ux project
 
+  // WEAVE
+
+  {
+    id: 197,
+
+    title: "WEAVE - Business Operations & Software Integration Website Design",
+
+    category: "UI/UX",
+
+    role: ["UI/UX Designer"],
+
+    /* ---------------- TOOLS USED ---------------- */
+
+    tools_used: ["Figma", "FigJam", "Adobe Photoshop", "Canva"],
+    /* ---------------- PROBLEM / SOLUTION ---------------- */
+
+    problem_solution: [
+      {
+        problem:
+          "Businesses often use multiple software tools that are difficult to manage and connect.",
+
+        solution:
+          "Created a clear website experience that shows how WEAVE helps businesses connect and manage their software workflows.",
+      },
+
+      {
+        problem:
+          "It can be difficult for business owners to understand which software and services are right for their needs.",
+
+        solution:
+          "Organised software, services, and integrations into clear sections and categories that are easy to explore.",
+      },
+
+      {
+        problem:
+          "WEAVE offers different types of support, from software setup to ongoing assistance.",
+
+        solution:
+          "Presented the available services through simple cards and dedicated sections so users can quickly understand their options.",
+      },
+
+      {
+        problem:
+          "ServiceM8 and its integrations can be complex for businesses to understand.",
+
+        solution:
+          "Created a dedicated ServiceM8 experience with clear information about setup, integrations, industries, and ongoing support.",
+      },
+
+      {
+        problem:
+          "Visitors need an easy way to move from understanding the service to taking action.",
+
+        solution:
+          "Added clear calls to action throughout the website, including the 'Book Your Free Assessment' journey.",
+      },
+    ],
+
+    /* ---------------- OVERVIEW ---------------- */
+
+    overview:
+      "This website design was created from scratch for WEAVE, a business operations and software integration service that helps Australian service businesses connect and improve the software they use every day. The design focuses on presenting WEAVE's services, supported software, ServiceM8 solutions, and operational support through a modern, structured, and conversion-focused website experience.",
+
+    /* ---------------- ABOUT ---------------- */
+
+    about:
+      "WEAVE helps Australian service businesses connect and improve the software they use every day. The website presents WEAVE as an operational and software solutions partner, helping businesses choose, configure, connect, and improve the systems they rely on for leads, quoting, invoicing, follow-up, scheduling, payments, and administration. The website also highlights supported software integrations and dedicated solutions such as ServiceM8 setup, optimisation, and ongoing support.",
+
+    /* ---------------- DESIGN DIRECTION ---------------- */
+
+    design_direction:
+      "The website was designed from scratch with a modern dark visual direction focused on software, technology, and business operations. The design uses a black background, bright orange accents, subtle borders, rounded cards, large typography, software logos, integration visuals, and abstract orange graphics to create a strong and professional digital presence for WEAVE.",
+
+    /* ---------------- DESIGN APPROACH ---------------- */
+
+    design_approach: [
+      {
+        focus: "Clear Business Positioning",
+
+        approach:
+          "Structured the website to quickly communicate what WEAVE does and how it helps service businesses improve their everyday software workflows.",
+      },
+
+      {
+        focus: "Software Integrations",
+
+        approach:
+          "Created dedicated sections for the software platforms WEAVE works with, organised into practical categories such as Field & Projects, CRM & Sales, Invoicing & Payments, and Scheduling & Forms.",
+      },
+
+      {
+        focus: "Service Presentation",
+
+        approach:
+          "Presented WEAVE's services through structured cards and sections covering operational assessments, software setup, implementation, handover, and ongoing support.",
+      },
+
+      {
+        focus: "ServiceM8 Experience",
+
+        approach:
+          "Designed a dedicated ServiceM8 solution experience covering new users, existing users, software comparisons, integrations, industries, and ongoing support.",
+      },
+
+      {
+        focus: "Conversion Flow",
+
+        approach:
+          "Used clear and repeated calls to action such as 'Book Your Free Assessment' to guide visitors toward contacting WEAVE and starting an operational assessment.",
+      },
+
+      {
+        focus: "Visual Storytelling",
+
+        approach:
+          "Used software logos, integration cards, dashboard-style visuals, abstract orange graphics, and structured content blocks to make the technical subject matter easier to understand.",
+      },
+    ],
+
+    /* ---------------- KEY DESIGN HIGHLIGHTS ---------------- */
+
+    design_highlights: [
+      "Designed the WEAVE website from scratch.",
+
+      "Created a modern dark-themed visual identity with orange accents.",
+
+      "Designed a strong hero section focused on business software workflows.",
+
+      "Created dedicated sections for how WEAVE helps businesses.",
+
+      "Designed a 'Tools We Work With' software navigation experience.",
+
+      "Organised supported software into clear business categories.",
+
+      "Created a dedicated software integrations directory.",
+
+      "Designed a dedicated ServiceM8 solution page.",
+
+      "Created service cards for Free 30-Minute Operations Call, Done-For-You Setup & 1-on-1 Handover, and Ongoing Monthly Care Plan.",
+
+      "Designed ServiceM8 integration cards featuring platforms such as Xero, MYOB, QuickBooks, Stripe, Deputy, Mailchimp, Zapier, and Make.",
+
+      "Created an industries section showing businesses that can benefit from ServiceM8.",
+
+      "Designed a Frequently Asked Questions section.",
+
+      "Created a dedicated operational assessment section with an intake form.",
+
+      "Used consistent CTA placement throughout the website.",
+
+      "Created a scalable card-based design system for software, services, integrations, and information sections.",
+    ],
+
+    /* ---------------- VISUAL DESIGN ---------------- */
+
+    visual_design:
+      "The visual design uses a dark black interface combined with bright orange accents, subtle borders, rounded cards, and glowing abstract orange visuals. Large typography creates a strong hierarchy while software logos, integration cards, dashboard-style elements, and workflow visuals make the technical subject matter easier to understand. The overall design combines a premium technology aesthetic with a clear business-focused structure.",
+
+    /* ---------------- KEY SECTIONS ---------------- */
+
+    key_sections: [
+      "Software Workflow Hero",
+
+      "How We Help",
+
+      "How It Works",
+
+      "Why Weave",
+
+      "Software Integrations",
+
+      "Tools We Work With",
+
+      "Supported Software Directory",
+
+      "Business Operations Assessment",
+
+      "ServiceM8 Solution",
+
+      "Who Is ServiceM8 For?",
+
+      "ServiceM8 Support Options",
+
+      "ServiceM8 Integrations",
+
+      "Industries Served",
+
+      "Frequently Asked Questions",
+
+      "Book Your Free Assessment",
+
+      "Footer & Contact Information",
+    ],
+
+    /* ---------------- LESSONS LEARNED ---------------- */
+
+    lesson_learned: [
+      "Complex software ecosystems can be presented more clearly when platforms are grouped into practical business categories.",
+
+      "A strong visual hierarchy helps users understand a service quickly without overwhelming them with technical information.",
+
+      "Dedicated solution pages allow important services such as ServiceM8 to be explained in greater detail.",
+
+      "Software logos and integration cards can make technical integrations easier for users to understand visually.",
+
+      "Different customer needs can be presented through clearly separated service options.",
+
+      "Strategically placed CTAs can create a clear path from discovering the service to booking an assessment.",
+
+      "A dark interface with controlled orange accents can create a strong technology-focused visual identity.",
+
+      "Abstract background graphics can add depth and visual interest while keeping the focus on the content.",
+
+      "FAQ and assessment sections help users get additional information and take the next step toward contacting the business.",
+    ],
+
+    /* ---------------- FIGMA ---------------- */
+
+    figma_link:
+      "https://www.figma.com/design/mf14PRBMzg6iiJF3iisxsa/Weave?node-id=0-1&t=tc6ku2bApNj9QohG-1",
+
+    /* ---------------- ASSETS ---------------- */
+
+    assets: {
+      banner: ["weave/b1.png", "weave/b2.png", "weave/b3.png"],
+
+      ui_images: [
+        "weave/s1.png",
+        "weave/s2.png",
+        "weave/s3.png",
+        "weave/s4.png",
+        "weave/s5.png",
+      ],
+    },
+
+    /* ---------------- TECH STACK ---------------- */
+
+    tech_stack: [
+      "Figma",
+
+      "UX Research",
+
+      "Website UI/UX Design",
+
+      "Information Architecture",
+
+      "Design Systems",
+
+      "Visual Hierarchy",
+
+      "Responsive Web Design",
+
+      "Interaction Design",
+
+      "Software Integration UX",
+
+      "Service Business UX",
+
+      "Conversion-Focused Design",
+
+      "Product & Service Visualization",
+    ],
+  },
+
+  // cashclub
+
   {
     id: 198,
     title: "ClubCash - Membership & Payments Platform Website Redesign",
