@@ -52,7 +52,7 @@ const Hero = () => {
 
   <h1 className="font-medium leading-tight">
   <span className="block text-[#B06014] text-2xl md:text-[38px]">
-    UI/UX Designer <h1> & Developer</h1>
+    UI/UX Designer <h1> & Web Developer</h1>
   </span>
  
 </h1>
