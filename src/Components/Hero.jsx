@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { Download } from "lucide-react";
 import { useLocation } from "react-router-dom";
-import { summyiaPic } from "/summyia-pic.png";
 
 const Hero = () => {
   const resumeLink =
@@ -50,15 +49,14 @@ const Hero = () => {
             Available For Work
           </span>
 
-  <h1 className="font-medium leading-tight">
-  <span className="block text-[#B06014] text-2xl md:text-[38px]">
-    UI/UX Designer <h1> & Developer</h1>
-  </span>
- 
-</h1>
- <span className="block text-white text-[8px] md:text-[20px] mt-2">
-    Building Scalable Web & Desktop Applications
-  </span>
+          <h1 className="font-medium leading-tight">
+            <span className="block text-[#B06014] text-2xl md:text-[38px]">
+              UI/UX Designer <h1> & Developer</h1>
+            </span>
+          </h1>
+          <span className="block text-white text-[8px] md:text-[20px] mt-2">
+            Building Scalable Web & Desktop Applications
+          </span>
           <p className="mt-3 max-w-xl mx-auto lg:mx-0 text-sm sm:text-base text-gray-400 leading-7">
             Transform your vision into high-performing digital products by
             combining intuitive UI/UX design with clean, scalable frontend
@@ -89,7 +87,7 @@ const Hero = () => {
             <div className="relative bg-white/5 border border-white/10 backdrop-blur-md rounded-3xl p-3 shadow-2xl">
               <div className="overflow-hidden rounded-2xl h-[260px] sm:h-[300px] md:h-[340px] lg:h-[380px]">
                 <img
-                  src={summyiaPic}
+                  src="/summyia-pic.png"
                   alt="Summyia"
                   className="w-full h-full object-cover object-top"
                 />

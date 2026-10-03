@@ -386,7 +386,7 @@ export const projectData = [
 
     /* ---------------- FIGMA ---------------- */
     figma_link:
-      "https://www.figma.com/design/G4F8zduA3X20JONLOxfKpW/Akhtar-Projects?node-id=65-577&t=fdqBDAmAS5GYDAGB-1",
+      "https://www.figma.com/design/YXH6NFgzkGuuxYjzZNcNDn/Clubcash?node-id=0-1&t=Tg0iOTDsE7B2zRcs-1",
 
     /* ---------------- ASSETS ---------------- */
     assets: {
